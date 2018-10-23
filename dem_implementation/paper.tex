@@ -1,0 +1,101 @@
+\documentclass{article}
+
+% to include pdf/eps/png files
+\usepackage{graphicx}
+
+% useful to add 'todo' markers
+\usepackage{todonotes}
+
+% hyperrefs
+\usepackage{hyperref}
+
+% ----------------- Code blocks ----------------
+% nice source code formatting
+\usepackage{minted}
+\usepackage[utf8]{inputenc}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4
+}
+
+\lstset{style=mystyle}
+% ----------------- Code blocks ----------------
+
+% change style of section headings
+\usepackage{sectsty}
+\allsectionsfont{\sffamily}
+
+% only required for orgmode ticked TODO items, can remove
+\usepackage{amssymb}
+
+% only required for underlining text
+\usepackage[normalem]{ulem}
+
+% often use this in differential operators:
+\renewcommand{\d}{\ensuremath{\mathrm{d}}}
+
+% allow more reasonable text width for most documents than LaTeX default
+\setlength{\textheight}{21cm}
+\setlength{\textwidth}{16cm}
+
+% reduce left and right margins accordingly
+\setlength{\evensidemargin}{-0cm}
+\setlength{\oddsidemargin}{-0cm}
+
+% reduce top margin
+\setlength{\topmargin}{0cm}
+
+% Increase default line spacing a little if desired
+\renewcommand{\baselinestretch}{1.2}
+
+% tailored float handling
+%\renewcommand{\topfraction}{0.8}
+%\renewcommand{\bottomfraction}{0.6}
+%\renewcommand{\textfraction}{0.2}
+
+\begin{document}
+
+\title{\sffamily \textbf{DEM implementation in PySPH}}
+
+\author{Dinesh A, IIT Bombay}
+
+\maketitle
+
+
+\begin{abstract}
+  This a report on the implementation of discrete element method in PySPH and
+  request for a feature to execute an equation after the completion of the time
+  step to update the contact information.
+\end{abstract}
+
+% include body of the paper, auto generated from orgmode content.org file
+\input{content.tex}
+
+
+% \bibliographystyle{abbrv}
+% \bibliography{paper.bib}
+
+\end{document}
